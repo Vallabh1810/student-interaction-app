@@ -268,7 +268,7 @@ router.post('/Requests', async (req, res) => {
         }
         else {
                 try {
-                    await Recieved.findOneAndUpdate({'userEmailail':email},
+                    await Recieved.findOneAndUpdate({'userEmail':email},
                         { $push:{recievedData: data[0]} }).then(() => {
                             res.json({ success: true })
                         })

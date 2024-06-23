@@ -35,7 +35,7 @@ export default function Experiences() {
             ? experience.map((data)=>{
               return(
                 
-                 <div className=''>
+                 <div className='card-group'>
                   {data.experience !== []
                     ?data.experience.filter((item)=> (String(item[1].name).toLowerCase().includes(String(search).toLowerCase())))
                     .map(filterItems=>{ 
